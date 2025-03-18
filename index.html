@@ -1050,7 +1050,7 @@
           button.addEventListener("click", (event) => {
             buttons.forEach((btn) => btn.classList.remove("active"));
             button.classList.add("active");
-            button.scrollIntoView({ behavior: "smooth", block: "center" });
+            button.scrollIntoView({ behavior: "smooth", block: "start" });
 
             event.stopPropagation();
           });
