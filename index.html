@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mofusand info ≽^•⩊•^≼</title>
+    <style>
+      /*! tailwindcss v4.0.14 | MIT License | https://tailwindcss.com */
+      @layer theme, base, components, utilities;
+      @layer theme {
+        :root,
+        :host {
+          --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+            "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+          --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+            "Liberation Mono", "Courier New", monospace;
+          --color-red-400: oklch(0.704 0.191 22.216);
+          --color-red-500: oklch(0.637 0.237 25.331);
+          --color-slate-500: oklch(0.554 0.046 257.417);
+          --color-gray-200: oklch(0.928 0.006 264.531);
+          --color-white: #fff;
+          --spacing: 0.25rem;
+          --text-xs: 0.75rem;
+          --text-xs--line-height: calc(1 / 0.75);
+          --text-sm: 0.875rem;
+          --text-sm--line-height: calc(1.25 / 0.875);
+          --text-xl: 1.25rem;
+          --text-xl--line-height: calc(1.75 / 1.25);
+          --font-weight-normal: 400;
+          --font-weight-semibold: 600;
+          --radius-2xl: 1rem;
+          --radius-3xl: 1.5rem;
+          --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+          --default-transition-duration: 150ms;
+          --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          --default-font-family: var(--font-sans);
+          --default-font-feature-settings: var(
+            --font-sans--font-feature-settings
+          );
+          --default-font-variation-settings: var(
+            --font-sans--font-variation-settings
+          );
+          --default-mono-font-family: var(--font-mono);
+          --default-mono-font-feature-settings: var(
+            --font-mono--font-feature-settings
+          );
+          --default-mono-font-variation-settings: var(
+            --font-mono--font-variation-settings
+          );
+        }
+      }
+      @layer base {
+        *,
+        ::after,
+        ::before,
+        ::backdrop,
+        ::file-selector-button {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+          border: 0 solid;
+        }
+        html,
+        :host {
+          line-height: 1.5;
+          -webkit-text-size-adjust: 100%;
+          tab-size: 4;
+          font-family: var(
+            --default-font-family,
+            ui-sans-serif,
+            system-ui,
+            sans-serif,
+            "Apple Color Emoji",
+            "Segoe UI Emoji",
+            "Segoe UI Symbol",
+            "Noto Color Emoji"
+          );
+          font-feature-settings: var(--default-font-feature-settings, normal);
+          font-variation-settings: var(
+            --default-font-variation-settings,
+            normal
+          );
+          -webkit-tap-highlight-color: transparent;
+        }
+        body {
+          line-height: inherit;
+        }
+        hr {
+          height: 0;
+          color: inherit;
+          border-top-width: 1px;
+        }
+        abbr:where([title]) {
+          -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+        }
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          font-size: inherit;
+          font-weight: inherit;
+        }
+        a {
+          color: inherit;
+          -webkit-text-decoration: inherit;
+          text-decoration: inherit;
+        }
+        b,
+        strong {
+          font-weight: bolder;
+        }
+        code,
+        kbd,
+        samp,
+        pre {
+          font-family: var(
+            --default-mono-font-family,
+            ui-monospace,
+            SFMono-Regular,
+            Menlo,
+            Monaco,
+            Consolas,
+            "Liberation Mono",
+            "Courier New",
+            monospace
+          );
+          font-feature-settings: var(
+            --default-mono-font-feature-settings,
+            normal
+          );
+          font-variation-settings: var(
+            --default-mono-font-variation-settings,
+            normal
+          );
+          font-size: 1em;
+        }
+        small {
+          font-size: 80%;
+        }
+        sub,
+        sup {
+          font-size: 75%;
+          line-height: 0;
+          position: relative;
+          vertical-align: baseline;
+        }
+        sub {
+          bottom: -0.25em;
+        }
+        sup {
+          top: -0.5em;
+        }
+        table {
+          text-indent: 0;
+          border-color: inherit;
+          border-collapse: collapse;
+        }
+        :-moz-focusring {
+          outline: auto;
+        }
+        progress {
+          vertical-align: baseline;
+        }
+        summary {
+          display: list-item;
+        }
+        ol,
+        ul,
+        menu {
+          list-style: none;
+        }
+        img,
+        svg,
+        video,
+        canvas,
+        audio,
+        iframe,
+        embed,
+        object {
+          display: block;
+          vertical-align: middle;
+        }
+        img,
+        video {
+          max-width: 100%;
+          height: auto;
+        }
+        button,
+        input,
+        select,
+        optgroup,
+        textarea,
+        ::file-selector-button {
+          font: inherit;
+          font-feature-settings: inherit;
+          font-variation-settings: inherit;
+          letter-spacing: inherit;
+          color: inherit;
+          border-radius: 0;
+          background-color: transparent;
+          opacity: 1;
+        }
+        :where(select:is([multiple], [size])) optgroup {
+          font-weight: bolder;
+        }
+        :where(select:is([multiple], [size])) optgroup option {
+          padding-inline-start: 20px;
+        }
+        ::file-selector-button {
+          margin-inline-end: 4px;
+        }
+        ::placeholder {
+          opacity: 1;
+          color: color-mix(in oklab, currentColor 50%, transparent);
+        }
+        textarea {
+          resize: vertical;
+        }
+        ::-webkit-search-decoration {
+          -webkit-appearance: none;
+        }
+        ::-webkit-date-and-time-value {
+          min-height: 1lh;
+          text-align: inherit;
+        }
+        ::-webkit-datetime-edit {
+          display: inline-flex;
+        }
+        ::-webkit-datetime-edit-fields-wrapper {
+          padding: 0;
+        }
+        ::-webkit-datetime-edit,
+        ::-webkit-datetime-edit-year-field,
+        ::-webkit-datetime-edit-month-field,
+        ::-webkit-datetime-edit-day-field,
+        ::-webkit-datetime-edit-hour-field,
+        ::-webkit-datetime-edit-minute-field,
+        ::-webkit-datetime-edit-second-field,
+        ::-webkit-datetime-edit-millisecond-field,
+        ::-webkit-datetime-edit-meridiem-field {
+          padding-block: 0;
+        }
+        :-moz-ui-invalid {
+          box-shadow: none;
+        }
+        button,
+        input:where([type="button"], [type="reset"], [type="submit"]),
+        ::file-selector-button {
+          appearance: button;
+        }
+        ::-webkit-inner-spin-button,
+        ::-webkit-outer-spin-button {
+          height: auto;
+        }
+        [hidden]:where(:not([hidden="until-found"])) {
+          display: none !important;
+        }
+      }
+      @layer utilities {
+        .filter {
+          filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast)
+            var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert)
+            var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+        }
+      }
+      .wrapper {
+        height: 100vh;
+        width: 100vw;
+        overflow-x: hidden;
+        background-image: linear-gradient(
+          to bottom,
+          #ffffff,
+          #fffaff,
+          #fff4f4,
+          #fff3e0,
+          #f8f7d4
+        );
+        padding-bottom: calc(var(--spacing) * 10);
+        text-align: center;
+      }
+      .header {
+        background-color: #c7e7e2;
+      }
+      .header img {
+        margin-inline: auto;
+        width: 100%;
+        max-width: 500px;
+      }
+      .update {
+        display: flex;
+        justify-content: flex-end;
+        background-color: #c7e7e2;
+        padding-block: calc(var(--spacing) * 0.5);
+        padding-right: calc(var(--spacing) * 1);
+        font-size: 9px;
+        --tw-font-weight: var(--font-weight-normal);
+        font-weight: var(--font-weight-normal);
+        color: #5b5b5b90;
+      }
+      .update strong {
+        margin-left: calc(var(--spacing) * 1);
+      }
+      .filter {
+        margin-inline: auto;
+        display: flex;
+        width: clamp(375px, 85%, 500px);
+        align-items: center;
+        justify-content: space-between;
+        padding-inline: calc(var(--spacing) * 2);
+        padding-top: calc(var(--spacing) * 4);
+        padding-bottom: calc(var(--spacing) * 3);
+      }
+      .filterGroup {
+        display: flex;
+        gap: calc(var(--spacing) * 2);
+      }
+      .filter label {
+        position: relative;
+        flex: auto;
+      }
+      .filter input {
+        display: none;
+      }
+      .filter span {
+        cursor: pointer;
+        border-radius: calc(infinity * 1px);
+        border-style: var(--tw-border-style);
+        border-width: 1px;
+        padding-inline: calc(var(--spacing) * 2);
+        padding-block: calc(var(--spacing) * 1);
+        font-size: var(--text-xs);
+        line-height: var(--tw-leading, var(--text-xs--line-height));
+        white-space: nowrap;
+        transition-property: all;
+        transition-timing-function: var(
+          --tw-ease,
+          var(--default-transition-timing-function)
+        );
+        transition-duration: var(
+          --tw-duration,
+          var(--default-transition-duration)
+        );
+        --tw-duration: 200ms;
+        transition-duration: 200ms;
+      }
+      #availableBtn {
+        border-style: var(--tw-border-style);
+        border-width: 1px;
+        border-color: #8ecbc2;
+        color: #8ecbc2;
+        &:is(:where(.peer):checked ~ *) {
+          background-color: #8ecbc2;
+        }
+        &:is(:where(.peer):checked ~ *) {
+          color: var(--color-white);
+        }
+      }
+      #comingSoonBtn {
+        border-style: var(--tw-border-style);
+        border-width: 1px;
+        border-color: var(--color-red-400);
+        color: var(--color-red-400);
+        &:is(:where(.peer):checked ~ *) {
+          background-color: var(--color-red-400);
+        }
+        &:is(:where(.peer):checked ~ *) {
+          color: var(--color-white);
+        }
+      }
+      #soldOutBtn {
+        border-style: var(--tw-border-style);
+        border-width: 1px;
+        border-color: var(--color-slate-500);
+        color: var(--color-slate-500);
+        &:is(:where(.peer):checked ~ *) {
+          background-color: var(--color-slate-500);
+        }
+        &:is(:where(.peer):checked ~ *) {
+          color: var(--color-white);
+        }
+      }
+      #showAllBtn {
+        margin-left: calc(var(--spacing) * 4);
+        display: inline-block;
+        cursor: pointer;
+        border-style: var(--tw-border-style);
+        border-width: 0px;
+        font-size: var(--text-xs);
+        line-height: var(--tw-leading, var(--text-xs--line-height));
+        --tw-font-weight: var(--font-weight-semibold);
+        font-weight: var(--font-weight-semibold);
+        color: #5b5b5b;
+        --tw-shadow: 0 0 #0000;
+        box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow),
+          var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+      }
+      .gallery {
+        margin-inline: auto;
+        margin-top: calc(var(--spacing) * 4);
+        display: grid;
+        width: clamp(375px, 85%, 500px);
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: calc(var(--spacing) * 2);
+        transition-property: all;
+        transition-timing-function: var(
+          --tw-ease,
+          var(--default-transition-timing-function)
+        );
+        transition-duration: var(
+          --tw-duration,
+          var(--default-transition-duration)
+        );
+        --tw-duration: 300ms;
+        transition-duration: 300ms;
+        --tw-ease: var(--ease-in-out);
+        transition-timing-function: var(--ease-in-out);
+        @media (width >= 40rem) {
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
+      }
+      button {
+        position: relative;
+        display: flex;
+        overflow: hidden;
+        border-radius: var(--radius-3xl);
+        border-style: var(--tw-border-style);
+        border-width: 1px;
+        border-color: var(--color-gray-200);
+        background-color: var(--color-white);
+        --tw-shadow: 0 1px var(--tw-shadow-color, rgb(0 0 0 / 0.05));
+        box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow),
+          var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+        transition-property: all;
+        transition-timing-function: var(
+          --tw-ease,
+          var(--default-transition-timing-function)
+        );
+        transition-duration: var(
+          --tw-duration,
+          var(--default-transition-duration)
+        );
+        --tw-duration: 300ms;
+        transition-duration: 300ms;
+        --tw-ease: var(--ease-in-out);
+        transition-timing-function: var(--ease-in-out);
+      }
+      button.hidden {
+        display: none !important;
+      }
+      button.nw .label.nw {
+        display: flex;
+      }
+      button.cs .label.cs {
+        display: block;
+      }
+      button.so .label.so {
+        display: block;
+      }
+      button.active {
+        grid-column: span 3 / span 3;
+        margin-top: calc(var(--spacing) * 4);
+        flex-direction: column;
+        border-style: var(--tw-border-style);
+        border-width: 0px;
+        background-image: linear-gradient(
+          to right bottom,
+          #ffd1d3,
+          #ffc3c6,
+          #ffb6b9,
+          #ffa8ab,
+          #ff9a9e
+        );
+        @media (width >= 40rem) {
+          grid-column: span 4 / span 4;
+        }
+        grid-column: span 3 / span 3;
+      }
+      @media (min-width: 640px) {
+        button.active {
+          grid-column: span 4 / span 4;
+        }
+      }
+      button.active.nw .label.nw {
+        position: absolute;
+        top: calc(var(--spacing) * 3);
+        right: calc(var(--spacing) * 20);
+        left: unset;
+        display: flex;
+        height: calc(var(--spacing) * 5);
+        width: unset;
+        border-radius: calc(infinity * 1px);
+      }
+      button.active.cs .label.cs,
+      button.active.so .label.so {
+        position: absolute;
+        top: calc(var(--spacing) * 3);
+        right: calc(var(--spacing) * 20);
+        display: block;
+        width: unset;
+        border-radius: calc(infinity * 1px);
+      }
+      button.active .thumb1 {
+        order: 9999;
+        aspect-ratio: auto;
+      }
+      button.active .thumb2 {
+        display: block;
+        aspect-ratio: auto;
+      }
+      button.active .content {
+        order: -9999;
+        display: flex;
+        padding-top: calc(var(--spacing) * 4);
+        padding-left: calc(var(--spacing) * 3);
+      }
+      button.active .types {
+        background-color: var(--color-white);
+        color: #ff9a9e;
+      }
+      .label.nw {
+        position: absolute;
+        top: calc(var(--spacing) * 2);
+        left: calc(var(--spacing) * 2);
+        display: none;
+        border-radius: calc(infinity * 1px);
+        background-color: var(--color-red-500);
+        padding-inline: calc(var(--spacing) * 3);
+        font-size: var(--text-sm);
+        line-height: var(--tw-leading, var(--text-sm--line-height));
+        --tw-font-weight: var(--font-weight-semibold);
+        font-weight: var(--font-weight-semibold);
+        color: var(--color-white);
+      }
+      .label.cs {
+        position: absolute;
+        display: none;
+        height: calc(var(--spacing) * 5);
+        width: 100%;
+        border-top-left-radius: var(--radius-2xl);
+        border-top-right-radius: var(--radius-2xl);
+        background-color: var(--color-red-400);
+        padding-inline: calc(var(--spacing) * 3);
+        text-align: center;
+        font-size: var(--text-xs);
+        line-height: var(--tw-leading, var(--text-xs--line-height));
+        --tw-leading: calc(var(--spacing) * 5);
+        line-height: calc(var(--spacing) * 5);
+        --tw-font-weight: var(--font-weight-semibold);
+        font-weight: var(--font-weight-semibold);
+        color: var(--color-white);
+      }
+      .label.so {
+        position: absolute;
+        display: none;
+        height: calc(var(--spacing) * 5);
+        width: 100%;
+        border-top-left-radius: var(--radius-2xl);
+        border-top-right-radius: var(--radius-2xl);
+        background-color: var(--color-slate-500);
+        padding-inline: calc(var(--spacing) * 3);
+        text-align: center;
+        font-size: var(--text-sm);
+        line-height: var(--tw-leading, var(--text-sm--line-height));
+        --tw-font-weight: var(--font-weight-semibold);
+        font-weight: var(--font-weight-semibold);
+        color: var(--color-white);
+      }
+      .thumb1 {
+        margin: calc(var(--spacing) * 2);
+        aspect-ratio: 1 / 1;
+        max-width: calc(100% - 16px);
+        border-radius: var(--radius-2xl);
+        object-fit: cover;
+      }
+      .thumb2 {
+        margin: calc(var(--spacing) * 2);
+        margin-bottom: calc(var(--spacing) * 0);
+        display: none;
+        aspect-ratio: 1 / 1;
+        max-width: calc(100% - 16px);
+        border-radius: var(--radius-2xl);
+      }
+      .content {
+        position: relative;
+        display: none;
+        flex: 1;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: calc(var(--spacing) * 4);
+        padding-right: calc(var(--spacing) * 2);
+        padding-bottom: calc(var(--spacing) * 2);
+        text-align: start;
+      }
+      .h2 {
+        margin-bottom: calc(var(--spacing) * 1);
+        font-size: var(--text-xs);
+        line-height: var(--tw-leading, var(--text-xs--line-height));
+        --tw-font-weight: var(--font-weight-normal);
+        font-weight: var(--font-weight-normal);
+        color: #5b5b5b;
+      }
+      .types {
+        position: absolute;
+        top: calc(var(--spacing) * 3);
+        right: calc(var(--spacing) * 3);
+        display: flex;
+        height: calc(var(--spacing) * 5);
+        align-items: center;
+        border-radius: calc(infinity * 1px);
+        background-color: var(--color-gray-200);
+        padding-inline: calc(var(--spacing) * 2);
+        text-align: center;
+        font-size: var(--text-xs);
+        line-height: var(--tw-leading, var(--text-xs--line-height));
+        color: #5b5b5b;
+      }
+      .collectionName {
+        font-size: var(--text-xl);
+        line-height: var(--tw-leading, var(--text-xl--line-height));
+        --tw-font-weight: var(--font-weight-normal);
+        font-weight: var(--font-weight-normal);
+        color: #5b5b5b;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <img src="img/header.jpg" alt="" />
+      </div>
+      <div class="update">Last updated <strong>12 FEB 2025</strong></div>
+      <div class="filter">
+        <div class="filterGroup">
+          <label>
+            <input type="radio" name="filter" value="available" class="peer" />
+            <span id="availableBtn">Available Only</span>
+          </label>
+          <label>
+            <input type="radio" name="filter" value="comingSoon" class="peer" />
+            <span id="comingSoonBtn">Coming Soon</span>
+          </label>
+          <label>
+            <input type="radio" name="filter" value="soldOut" class="peer" />
+            <span id="soldOutBtn"> Sold Out</span>
+          </label>
+        </div>
+        <button id="showAllBtn">Show All</button>
+      </div>
+      <div class="gallery">
+        <button type="button" class="so">
+          <div class="label nw">NEW</div>
+          <div class="label cs">Comming soon</div>
+          <div class="label so">SOLD OUT</div>
+          <img
+            class="thumb1"
+            src="img/xsanrioNarikiri.jpg"
+            alt=""
+          />
+          <div class="content">
+            <p class="h2">Mofusand</p>
+            <span class="types">6 types</span>
+            <p class="collectionName">x Sanrio Characters Figure 1</p>
+          </div>
+        </button>
+        <button type="button" class="nw">
+          <div class="label nw">NEW</div>
+          <div class="label cs">Comming soon</div>
+          <div class="label so">SOLD OUT</div>
+          <img
+            class="thumb1"
+            src="img/xsanrioNarikiri2.jpg"
+            alt=""
+          />
+          <div class="content">
+            <p class="h2">Mofusand</p>
+            <span class="types">5 types</span>
+            <p class="collectionName">x Sanrio Characters Figure 2</p>
+          </div>
+        </button>
+        <button type="button" class="cs">
+          <div class="label nw">NEW</div>
+          <div class="label cs">Comming soon</div>
+          <div class="label so">SOLD OUT</div>
+          <img
+            class="thumb1"
+            src="img/xsanrioNarikiri3.jpg"
+            alt=""
+          />
+          <div class="content">
+            <p class="h2">Mofusand</p>
+            <span class="types">5 types</span>
+            <p class="collectionName">x Sanrio Characters Figure 3</p>
+          </div>
+        </button>
+        <button type="button" class="">
+          <div class="label nw">NEW</div>
+          <div class="label cs">Comming soon</div>
+          <div class="label so">SOLD OUT</div>
+          <img
+            class="thumb1"
+            src="img/nyanpantsuFigure.jpg"
+            alt=""
+          />
+          <div class="content">
+            <p class="h2">Mofusand</p>
+            <span class="types">5 types</span>
+            <p class="collectionName">Nyanpantsu! Figure</p>
+          </div>
+        </button>
+        <button type="button" class="">
+          <div class="label nw">NEW</div>
+          <div class="label cs">Comming soon</div>
+          <div class="label so">SOLD OUT</div>
+          <img
+            class="thumb1"
+            src="img/narabundesu1.webp"
+            alt=""
+          />
+          <div class="content">
+            <p class="h2">Mofusand</p>
+            <span class="types">5 types</span>
+            <p class="collectionName">Narabundesu 1</p>
+          </div>
+        </button>
+        <button type="button" class="">
+          <div class="label nw">NEW</div>
+          <div class="label cs">Comming soon</div>
+          <div class="label so">SOLD OUT</div>
+          <img
+            class="thumb1"
+            src="img/uminoikimono.jpg"
+            alt=""
+          />
+          <div class="content">
+            <p class="h2">Mofusand</p>
+            <span class="types">5 types</span>
+            <p class="collectionName">Umi no Ikimono</p>
+          </div>
+        </button>
+        <button type="button" class="">
+          <div class="label nw">NEW</div>
+          <div class="label cs">Comming soon</div>
+          <div class="label so">SOLD OUT</div>
+          <img
+            class="thumb1"
+            src="img/samenyanMascotFigure2.jpg"
+            alt=""
+          />
+          <div class="content">
+            <p class="h2">Mofusand</p>
+            <span class="types">6 types</span>
+            <p class="collectionName">Samenyan Mascot Figure 2</p>
+          </div>
+        </button>
+        <button type="button" class="cs">
+          <div class="label nw">NEW</div>
+          <div class="label cs">Comming soon</div>
+          <div class="label so">SOLD OUT</div>
+          <img
+            class="thumb1"
+            src="img/narabundesu2.webp"
+            alt=""
+          />
+          <div class="content">
+            <p class="h2">Mofusand</p>
+            <span class="types">5 types</span>
+            <p class="collectionName">Narabundesu 2</p>
+          </div>
+        </button>
+        <button type="button" class="">
+          <div class="label nw">NEW</div>
+          <div class="label cs">Comming soon</div>
+          <div class="label so">SOLD OUT</div>
+          <img
+            class="thumb1"
+            src="img/interiorMiniFigure1-1.webp"
+            alt=""
+          />
+          <img
+            class="thumb2"
+            src="img/interiorMiniFigure1.webp"
+            alt=""
+          />
+          <div class="content">
+            <p class="h2">Mofusand</p>
+            <span class="types">5 types</span>
+            <p class="collectionName">Interior Mini Figure 1</p>
+          </div>
+        </button>
+        <button type="button" class="">
+          <div class="label nw">NEW</div>
+          <div class="label cs">Comming soon</div>
+          <div class="label so">SOLD OUT</div>
+          <img
+            class="thumb1"
+            src="img/interiorMiniFigure2-1.webp"
+            alt=""
+          />
+          <img
+            class="thumb2"
+            src="img/interiorMiniFigure2.webp"
+            alt=""
+          />
+          <div class="content">
+            <p class="h2">Mofusand</p>
+            <span class="types">5 types</span>
+            <p class="collectionName">Interior Mini Figure 2</p>
+          </div>
+        </button>
+        <button type="button" class="">
+          <div class="label nw">NEW</div>
+          <div class="label cs">Comming soon</div>
+          <div class="label so">SOLD OUT</div>
+          <img
+            class="thumb1"
+            src="img/interiorMiniFigure3-1.webp"
+            alt=""
+          />
+          <img
+            class="thumb2"
+            src="img/interiorMiniFigure3.webp"
+            alt=""
+          />
+          <div class="content">
+            <p class="h2">Mofusand</p>
+            <span class="types">5 types</span>
+            <p class="collectionName">Interior Mini Figure 3</p>
+          </div>
+        </button>
+        <button type="button" class="">
+          <div class="label nw">NEW</div>
+          <div class="label cs">Comming soon</div>
+          <div class="label so">SOLD OUT</div>
+          <img
+            class="thumb1"
+            src="img/interiorMiniFigure4-1.webp"
+            alt=""
+          />
+          <img
+            class="thumb2"
+            src="img/interiorMiniFigure4.webp"
+            alt=""
+          />
+          <div class="content">
+            <p class="h2">Mofusand</p>
+            <span class="types">5 types</span>
+            <p class="collectionName">Interior Mini Figure 4</p>
+          </div>
+        </button>
+        <button type="button" class="">
+          <div class="label nw">NEW</div>
+          <div class="label cs">Comming soon</div>
+          <div class="label so">SOLD OUT</div>
+          <img
+            class="thumb1"
+            src="img/animalMagnet.jpg"
+            alt=""
+          />
+          <div class="content">
+            <p class="h2">Mofusand</p>
+            <span class="types">5 types</span>
+            <p class="collectionName">Animal Magnet</p>
+          </div>
+        </button>
+        <button type="button" class="">
+          <div class="label nw">NEW</div>
+          <div class="label cs">Comming soon</div>
+          <div class="label so">SOLD OUT</div>
+          <img
+            class="thumb1"
+            src="img/bathbomb1.webp"
+            alt=""
+          />
+          <img
+            class="thumb2"
+            src="img/bathbomb2.webp"
+            alt=""
+          />
+          <div class="content">
+            <p class="h2">Mofusand</p>
+            <span class="types">5 types</span>
+            <p class="collectionName">Bath ball</p>
+          </div>
+        </button>
+        <button type="button" class="cs">
+          <div class="label nw">NEW</div>
+          <div class="label cs">Comming soon</div>
+          <div class="label so">SOLD OUT</div>
+          <img
+            class="thumb1"
+            src="img/fruitnyan.jpg"
+            alt=""
+          />
+          <div class="content">
+            <p class="h2">Mofusand</p>
+            <span class="types">5 types</span>
+            <p class="collectionName">Friutnyan Figure</p>
+          </div>
+        </button>
+        <button type="button" class="nw">
+          <div class="label nw">NEW</div>
+          <div class="label cs">Comming soon</div>
+          <div class="label so">SOLD OUT</div>
+          <img
+            class="thumb1"
+            src="img/hachinyanSwing.jpg"
+            alt=""
+          />
+          <div class="content">
+            <p class="h2">Mofusand</p>
+            <span class="types">5 types</span>
+            <p class="collectionName">Hachinyan Swing</p>
+          </div>
+        </button>
+        <button type="button" class="">
+          <div class="label nw">NEW</div>
+          <div class="label cs">Comming soon</div>
+          <div class="label so">SOLD OUT</div>
+          <img
+            class="thumb1"
+            src="img/ebinyanFigure.jpg"
+            alt=""
+          />
+          <div class="content">
+            <p class="h2">Mofusand</p>
+            <span class="types">5 types</span>
+            <p class="collectionName">Ebinyan Figure</p>
+          </div>
+        </button>
+        <button type="button" class="">
+          <div class="label nw">NEW</div>
+          <div class="label cs">Comming soon</div>
+          <div class="label so">SOLD OUT</div>
+          <img
+            class="thumb1"
+            src="img/ebinyanFigureKeyholder.jpg"
+            alt=""
+          />
+          <div class="content">
+            <p class="h2">Mofusand</p>
+            <span class="types">5 types</span>
+            <p class="collectionName">Ebinyan Figure Keyholder</p>
+          </div>
+        </button>
+        <button type="button" class="">
+          <div class="label nw">NEW</div>
+          <div class="label cs">Comming soon</div>
+          <div class="label so">SOLD OUT</div>
+          <img
+            class="thumb1"
+            src="img/maritozzoMascot.jpg"
+            alt=""
+          />
+          <div class="content">
+            <p class="h2">Mofusand</p>
+            <span class="types">5 types</span>
+            <p class="collectionName">Maritozzo Mascot</p>
+          </div>
+        </button>
+        <button type="button" class="">
+          <div class="label nw">NEW</div>
+          <div class="label cs">Comming soon</div>
+          <div class="label so">SOLD OUT</div>
+          <img
+            class="thumb1"
+            src="img/samenyanMascotFigure1.webp"
+            alt=""
+          />
+          <div class="content">
+            <p class="h2">Mofusand</p>
+            <span class="types">5 types</span>
+            <p class="collectionName">Samenyan Mascot Figure 1</p>
+          </div>
+        </button>
+        <button type="button" class="">
+          <div class="label nw">NEW</div>
+          <div class="label cs">Comming soon</div>
+          <div class="label so">SOLD OUT</div>
+          <img
+            class="thumb1"
+            src="img/suberidaiNyanko.jpg"
+            alt=""
+          />
+          <div class="content">
+            <p class="h2">Mofusand</p>
+            <span class="types">4 types</span>
+            <p class="collectionName">Suberidai Nyanko</p>
+          </div>
+        </button>
+      </div>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const buttons = Array.from(
+          document.querySelectorAll(".gallery button")
+        );
+        const availableBtn = document.getElementById("availableBtn");
+        const comingSoonBtn = document.getElementById("comingSoonBtn");
+        const soldOutBtn = document.getElementById("soldOutBtn");
+        const showAllBtn = document.getElementById("showAllBtn");
+        const filterRadios = document.querySelectorAll('input[name="filter"]');
+
+        // Function to shuffle an array randomly
+        function shuffleArray(array) {
+          for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]]; // Swap elements
+          }
+          return array;
+        }
+
+        // Function to sort buttons: .nw first, .cs second, and randomize the rest
+        function sortButtons() {
+          const newButtons = buttons.filter((button) =>
+            button.classList.contains("nw")
+          );
+          const comingSoonButtons = buttons.filter((button) =>
+            button.classList.contains("cs")
+          );
+          const otherButtons = buttons.filter(
+            (button) =>
+              !button.classList.contains("nw") &&
+              !button.classList.contains("cs")
+          );
+
+          // Shuffle the remaining buttons
+          const shuffledOtherButtons = shuffleArray(otherButtons);
+
+          // Combine them in the order: .nw, .cs, and shuffled rest
+          const sortedButtons = [
+            ...newButtons,
+            ...comingSoonButtons,
+            ...shuffledOtherButtons,
+          ];
+
+          // Append the sorted buttons back into the gallery
+          const gallery = document.querySelector(".gallery");
+          gallery.innerHTML = ""; // Clear the current gallery
+          sortedButtons.forEach((button) => gallery.appendChild(button)); // Add them back in the sorted order
+        }
+
+        // Call the sorting function when the page loads
+        sortButtons();
+
+        // Click event for gallery items
+        buttons.forEach((button) => {
+          button.addEventListener("click", (event) => {
+            buttons.forEach((btn) => btn.classList.remove("active"));
+            button.classList.add("active");
+            button.scrollIntoView({ behavior: "smooth", block: "center" });
+
+            event.stopPropagation();
+          });
+        });
+
+        // Click outside to remove .active
+        document.addEventListener("click", (event) => {
+          if (!event.target.closest(".gallery button")) {
+            buttons.forEach((btn) => btn.classList.remove("active"));
+          }
+        });
+
+        // Filter function
+        function filterItems(filter) {
+          buttons.forEach((button) => {
+            button.classList.remove("hidden");
+
+            if (
+              filter === "available" &&
+              (button.classList.contains("so") ||
+                button.classList.contains("cs"))
+            ) {
+              button.classList.add("hidden");
+            } else if (
+              filter === "comingSoon" &&
+              !button.classList.contains("cs")
+            ) {
+              button.classList.add("hidden");
+            } else if (
+              filter === "soldOut" &&
+              !button.classList.contains("so")
+            ) {
+              button.classList.add("hidden");
+            }
+          });
+        }
+
+        // Event listeners for radio buttons
+        filterRadios.forEach((radio) => {
+          radio.addEventListener("change", (event) => {
+            filterItems(event.target.value);
+          });
+        });
+
+        // Show All button
+        showAllBtn.addEventListener("click", () => {
+          buttons.forEach((button) => button.classList.remove("hidden"));
+          filterRadios.forEach((radio) => (radio.checked = false));
+        });
+      });
+    </script>
+  </body>
+</html>
